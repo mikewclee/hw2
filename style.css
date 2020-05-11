@@ -1,25 +1,10 @@
+/* change font and color */
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     background-color: rgb(24, 23, 23);
     color: grey;
 }
 
-#background{
-    background-color: rgba(189, 188, 188, 0.856);
-}
-
-.container{
-    border:1px solid gray;
-    padding: 10px;
-    margin-top: 20px;
-    background-color: white;
-
-}
-
-/* bottom paragh layout */
-#bottom{
-    padding-left:20px;
-}
 // Small devices (landscape phones, less than 768px)
 @media (max-width: 768px) {
     div{
@@ -27,18 +12,48 @@ body{
     }
 }
 
-#containersmall{
-    width: 800px;
-    height: 570px;
+/* set gray background */
+#background{
+    background-color: rgba(189, 188, 188, 0.856);
 }
 
+/* Set border line in container */
+.container{
+    border:1px solid gray;
+    padding: 20px;
+    margin-top: 5px;
+    background-color: white;
+
+}
+
+/* bottom paragh layout */
+#bottom{
+    padding-left:30px;
+}
+
+/* underline div */
+.underline{
+    border-bottom: 1px solid gray;
+    margin-bottom: 30px;
+    length: auto;
+}
+
+/* Portfolio - container to fix pics */
+#containersmall{
+    width: fit-content;
+    height: auto;
+    text-align: center;
+}
+
+/* set footer on bottom and center copyright */
 #footer { 
     position: fixed; 
-    padding: 20px; 
+    padding: 10px; 
     bottom: 0; 
     width: 100%; 
     /* Height of the footer*/   
     background: grey; 
-    text-align: center;
+    text-align:center;
+    color:black;
     border-top: 10px solid rgb(7, 182, 182);
 } 

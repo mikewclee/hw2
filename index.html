@@ -5,22 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HW2</title>
-    <link rel="stylesheet" href="style.css">
+
     <!-- Bootstrap CDN -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="style.css">
 
 </head>
 <body id="background">
    <!-- Start Nav -->
-   <nav class="navbar navbar-expand-lg navbar-dark bg-white border-bottom border-secondary">
-    <span class="navbar-brand mb-1 h1 bg-info ml-4 p-4">Michael Lee</span>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon bg-dark"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="nav navbar-nav navbar-right">
+   <nav class="navbar navbar-expand-sm navbar-dark bg-white border-bottom border-secondary">
+    <!-- ml-5 set margins over 5, p-3 padding -->
+    <span class="navbar-brand bg-info ml-5 p-3"><strong>Michael Lee</strong></span>
+
+    <div class="collapse navbar-collapse d-inline-flex flex-row-reverse" >
+      <ul class="nav navbar-right">
         <li class="nav-item">
           <a class="nav-link text-muted" href="index.html">About</a>
         </li>
@@ -37,21 +35,25 @@
 
   <!-- Container -->
   <div class="container text-muted">
-      <div class="row">
+      <div class="row underline">
           <div class="page-header">
-            <h2 class="text-info p-3"><u>About Me</u></h2>
+            <h2 class="text-info p-2">About Me</h2>
           </div>
       </div>
       <div class="row">
         <div class="col-sm-2">
-            <img src="mike.JPG" class="img-thumbnail" alt="thumbnail">
+            <img src="mike.JPG" class="img-thumbnail" alt="Selfie" width="120px" height="120px">
         </div>
         <div class="col-sm-10">
-            <p>Hello, My name is Mike and I'm studying to become a software developer. In my spare time, I enjoy basketball, fitness, cooking, and playing poker.</p>
+            <p>Hello, My name is Mike and I'm studying to become a full-stack software developer.  I'm attending Columbia University Coding Boot Camp graduating in October 2020.
+              In my spare time, I enjoy basketball, fitness, cooking, traveling, spirits, and playing poker.</p>
         </div>
       
       <div class="row" id="bottom">
         <div class="col-sm-12">
+          <a href="mailto:mikewclee@gmail.com">Email: mikewclee@gmail.com</a> <br>
+          <a target="_blank" href="https://github.com/mikewclee">Github</a> <br>
+          <a target="_blank" href="https://www.linkedin.com/in/michael-lee-571447a/">LinkedIn</a> <br>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore nihil tenetur, sapiente nemo architecto ratione deleniti ut alias, praesentium dolor impedit reprehenderit accusantium beatae aliquam maiores totam porro id harum!</p>
         </div>
       </div>
@@ -60,7 +62,7 @@
   </div>
 
   <div id="footer">
-    Copyright &copy Mike Lee
+    <p>Copyright &copy Mike Lee</p>
 </div> 
 </body>
 </html>
