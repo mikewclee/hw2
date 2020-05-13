@@ -1,21 +1,33 @@
 /* change font and color */
 body{
-    font-family: 'Times New Roman', Times, serif;
-    background-color: rgb(24, 23, 23);
+    font-family: sans-serif, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    /* background-color: rgb(24, 23, 23); */
     color: grey;
+    background-image: url("images/cement.jpg");
+    line-height: 1.5;
+    margin: 0;
+
 }
 
-// Small devices (landscape phones, less than 768px)
-@media (max-width: 768px) {
-    div{
-        background-color: red;
+#logo{
+    background-color: cadetblue;
+    color: white;
+
+}
+/* // Small devices (landscape phones, less than 768px) */
+@media screen and (max-width: 768px) {
+    body {
+      background-color: #333;
     }
-}
-
-/* set gray background */
-#background{
-    background-color: rgba(189, 188, 188, 0.856);
-}
+    .container {
+      width: 100%;
+      padding: 10px;
+    }
+    .nav{
+        width: 100%;
+    }
+  }
 
 /* Set border line in container */
 .container{
@@ -23,12 +35,6 @@ body{
     padding: 20px;
     margin-top: 5px;
     background-color: white;
-
-}
-
-/* bottom paragh layout */
-#bottom{
-    padding-left:30px;
 }
 
 /* underline div */
@@ -45,15 +51,16 @@ body{
     text-align: center;
 }
 
-/* set footer on bottom and center copyright */
-#footer { 
-    position: fixed; 
-    padding: 10px; 
-    bottom: 0; 
-    width: 100%; 
-    /* Height of the footer*/   
-    background: grey; 
+/* sticky footer on bottom and center copyright */
+#footer {
+    /* position: sticky;     */
+    position: fixed;
+    clear: both;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+    background: grey;
     text-align:center;
     color:black;
-    border-top: 10px solid rgb(7, 182, 182);
-} 
+    border-top: 5px solid rgb(7, 182, 182);
+}

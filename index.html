@@ -3,66 +3,82 @@
 <head>
     <!-- Required meta tags -->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HW2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0", shrink-to-fit=no>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Homepage for Michael Lee.  Website is developed from Columbia Engineering Coding Bootcamp coding lessons.">
+    <title>About Me: Homework #2</title>
 
     <!-- Bootstrap CDN -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 
 </head>
-<body id="background">
-   <!-- Start Nav -->
-   <nav class="navbar navbar-expand-sm navbar-dark bg-white border-bottom border-secondary">
-    <!-- ml-5 set margins over 5, p-3 padding -->
-    <span class="navbar-brand bg-info ml-5 p-3"><strong>Michael Lee</strong></span>
 
-    <div class="collapse navbar-collapse d-inline-flex flex-row-reverse" >
-      <ul class="nav navbar-right">
-        <li class="nav-item">
-          <a class="nav-link text-muted" href="index.html">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-muted" href="portfolio.html">Portfolio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-muted" href="contact.html">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+<!-- change backgroud to cement.jpg -->
+<body>
+    <!-- Start Nav copied from Bootstrap -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-white border-bottom border-secondary">
+        <!-- ml-5 set margins over 5, p-3 padding -->
+        <span class="navbar-brand bg-info ml-2 p-3"><h3><strong>Michael Lee</strong></h3></span>
+    
+    <!-- <a class="navbar-brand bg-info ml-2 p-3 d-inline-flex"><h2>Michael Lee</h2></a> -->
+        <div class="collapse navbar-collapse d-inline-flex flex-row-reverse" >
+            <ul class="nav navbar-right">
+                <li class="nav-item">
+                    <a class="nav-link text-muted" href="index.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-muted" href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-muted" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
   <!-- End Nav -->
 
   <!-- Container -->
-  <div class="container text-muted">
-      <div class="row underline">
-          <div class="page-header">
-            <h2 class="text-info p-2">About Me</h2>
-          </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-2">
-            <img src="mike.JPG" class="img-thumbnail" alt="Selfie" width="120px" height="120px">
+    <div class="container text-muted">
+        <!-- About me on own row -->
+        <div class="page-header underline">
+          <h4 class="text-info p-2 page-header"><strong>About Me</strong></h4>
         </div>
-        <div class="col-sm-10">
-            <p>Hello, My name is Mike and I'm studying to become a full-stack software developer.  I'm attending Columbia University Coding Boot Camp graduating in October 2020.
-              In my spare time, I enjoy basketball, fitness, cooking, traveling, spirits, and playing poker.</p>
+
+        <div class="row" style="margin-top: -20px;">
+            <!-- Picture on left column -->
+            <div class="col-sm-2">
+                <img src="/images/mike.JPG" class="img-fluid" alt="Responsive image">
+            </div>
+        <!-- Introduction on right column -->
+            <div class="col-sm-10">
+                <p>Hello, My name is Mike and I'm studying to become a full-stack software developer.  I'm attending Columbia University Coding Boot Camp graduating in October 2020.  I'm a creative problem solver and highly analytical IT professional with over ten years of experience in Python, SQL, and Tableau. Extensive knowledge in trading systems, database, workflow/process analysis, material terms/repository reconciliation and derivatives. 
+                  I enjoy problem solving, analyzing data and generating ideas to resolve issues and improve processes. My colleagues would describe me as a focus and determined resourceful individual who maintains a positive, proactive attitude when faced with adversity. 
+                </p>
+                <p>I grew up in NYC and currently live in Brooklyn.  I studied engineering in college and graduated with a Masters from NYU.  I've worked mainly in the financial and consulting sector.
+                  In my spare time, I enjoy basketball, fitness, cooking, traveling, spirits, and playing poker.</p>
+            </div>
         </div>
-      
-      <div class="row" id="bottom">
-        <div class="col-sm-12">
-          <a href="mailto:mikewclee@gmail.com">Email: mikewclee@gmail.com</a> <br>
-          <a target="_blank" href="https://github.com/mikewclee">Github</a> <br>
-          <a target="_blank" href="https://www.linkedin.com/in/michael-lee-571447a/">LinkedIn</a> <br>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore nihil tenetur, sapiente nemo architecto ratione deleniti ut alias, praesentium dolor impedit reprehenderit accusantium beatae aliquam maiores totam porro id harum!</p>
+        
+        <!-- Working links to email, github, linkedin -->
+        <div class="row">
+            <div class="col-sm-12" style="text-align: right;">
+            <a href="mailto:mikewclee@gmail.com" target="_top"><u>mikewclee@gmail.com</u></a> <br>
+            <a target="_blank" href="https://github.com/mikewclee"><u>Github: mikewclee</u></a> <br>
+            <a target="_blank" href="https://www.linkedin.com/in/michael-lee-571447a/"><u>LinkedIn</u></a> <br>       
+            <!-- block quote bootstrap -->
+            <blockquote class="blockquote">
+                <p class="mb-0">If you love life, don't waste time, for time is what life is made up of.</p>
+                  <footer class="blockquote-footer"> Bruce Lee</footer>
+            </blockquote>
+            </div>
         </div>
-      </div>
+    
     </div>
 
-  </div>
+    <div id="footer">
+        <p>Copyright &copy Mike Lee</p>
+    </div> 
 
-  <div id="footer">
-    <p>Copyright &copy Mike Lee</p>
-</div> 
 </body>
 </html>

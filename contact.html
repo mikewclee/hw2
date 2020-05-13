@@ -4,57 +4,61 @@
     <!-- Required meta tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HW2</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Me: Homework #2</title>
 
     <!-- Bootstrap CDN -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-
 </head>
-<body id="background">
-   <!-- Start Nav -->
-   <nav class="navbar navbar-expand-lg navbar-dark bg-white border-bottom border-secondary">
-    <span class="navbar-brand mb-1 h1 bg-info ml-4 p-4">Michael Lee</span>
-    <div class="collapse navbar-collapse d-inline-flex flex-row-reverse" id="navbarSupportedContent">
-      <ul class="nav navbar-right">
-        <li class="nav-item">
-          <a class="nav-link text-muted" href="index.html">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-muted" href="portfolio.html">Portfolio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-muted" href="contact.html">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  <!-- End Nav -->
+
+<body>
+  <!-- Start Nav copied from Bootstrap -->
+  <nav class="navbar navbar-expand-sm navbar-dark bg-white border-bottom border-secondary">
+   <!-- ml-5 set margins over 5, p-3 padding -->
+   <span class="navbar-brand bg-info ml-2 p-3"><h3><strong>Michael Lee</strong></h3></span>
+
+   <div class="collapse navbar-collapse d-inline-flex flex-row-reverse" >
+     <ul class="nav navbar-right">
+       <li class="nav-item">
+         <a class="nav-link text-muted" href="index.html">About</a>
+       </li>
+       <li class="nav-item">
+         <a class="nav-link text-muted" href="portfolio.html">Portfolio</a>
+       </li>
+       <li class="nav-item">
+         <a class="nav-link text-muted" href="contact.html">Contact</a>
+       </li>
+     </ul>
+   </div>
+ </nav>
+ <!-- End Nav -->
 
   <!-- Form Container -->
   <!-- Container -->
   <div class="container text-muted">
+        <!-- Contact on own row -->
     <div class="row underline">
       <div class="page-header">
-        <h2 class="text-info p-3">Contact</h2>
+        <h4 class="text-info p-2 page-header"><strong>Contact</strong></h4>
       </div>
   </div>
 
     <form>
         <div class="form-group">
             <div class="form-group">
-                <label for="formGroupExampleInput">Name</label>
-                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="John Smith">
+                <label for="InputName">Name</label>
+                <input type="name" class="form-control" id="InputName" placeholder="John Smith">
              </div>
 
              <div class="form-group">
-                <label for="inputEmail4">Email</label>
-                <input type="email" class="form-control" id="inputEmail4" placeholder="example@gmail.com">
+                <label for="InputEmail">Email</label>
+                <input type="email" class="form-control" id="InputEmail" placeholder="example@gmail.com">
               </div>
 
             <div class="form-group">
-                <label for="exampleFormControlTextarea1">Message</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
+                <label for="InputMessage">Message</label>
+                <textarea class="form-control" id="InputMessage" placeholder="Please type Message" rows="6"></textarea>
               </div>
 
             <button type="submit" class="btn btn-primary">Submit</button>
@@ -62,9 +66,14 @@
     </form>
 </div>
 
+<!-- Separate fixed footer row center -->
 <div id="footer">
   Copyright &copy Mike Lee
 </div>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
 </body>
 </html>
