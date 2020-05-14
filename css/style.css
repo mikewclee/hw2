@@ -2,9 +2,9 @@
 body{
     font-family: sans-serif, 'Times New Roman', Times, serif;
     font-size: 16px;
-    /* background-color: rgb(24, 23, 23); */
+    background-color: rgb(175, 171, 171);
     color: grey;
-    background-image: url("/images/cement.jpg");
+    background-image: url("../images/cement.jpg");
     line-height: 1.5;
     margin: 0;
 }
@@ -15,9 +15,9 @@ body{
 
 }
 /* // Small devices (landscape phones, less than 768px) */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 576px) {
     body {
-      background-color: #333;
+      background-color:rgb(199, 209, 143);
     }
     .container {
       width: 100%;
@@ -49,6 +49,25 @@ body{
     height: auto;
     text-align: center;
 }
+
+#portfoliopics{
+    height: 150px;
+    width: 150px;
+}
+
+h5{
+    position: absolute;
+    bottom: 20px;
+    width: 90%;
+    padding: 15px;
+    margin-bottom: 0;
+    font-weight: 300;
+    line-height: 15px;
+    color: #fff;
+    text-align: center;
+    background: #4aaaa5;
+
+  }
 
 /* sticky footer on bottom and center copyright */
 #footer {
